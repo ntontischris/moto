@@ -621,7 +621,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="text-[#DC2626] text-sm font-bold tracking-[0.2em] uppercase mb-3">
-              05 — ERP Entersoft
+              06 — ERP Entersoft
             </p>
             <h2 className="text-4xl md:text-5xl font-black mb-16">
               Πλήρης Διασύνδεση με Entersoft
@@ -695,6 +695,253 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ====== LANDING PAGES ====== */}
+      <section className="bg-gray-50 py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-[#DC2626] text-sm font-bold tracking-[0.2em] uppercase mb-3">
+              05 — Marketing Machine
+            </p>
+            <h2 className="text-4xl md:text-5xl font-black mb-4">
+              Landing Pages — Κάθε διαφήμιση, τη δική της σελίδα
+            </h2>
+            <p className="text-lg text-gray-500 mb-16 max-w-3xl">
+              Το e-shop δεν είναι μόνο κατάστημα — είναι{" "}
+              <strong className="text-[#0F1419]">marketing platform</strong>.
+              Δυναμικές landing pages για κάθε καμπάνια, κοινό και στιγμή.
+            </p>
+          </motion.div>
+
+          {/* Campaign + Bike highlight cards */}
+          <div className="grid md:grid-cols-2 gap-5 mb-5">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-red-50 to-white rounded-2xl border border-red-200 p-6"
+            >
+              <div className="text-2xl mb-3">🎯</div>
+              <h3 className="text-lg font-bold mb-3">Campaign Landing Pages</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                Κάθε διαφήμιση στέλνει τον πελάτη σε{" "}
+                <strong>εξατομικευμένη σελίδα</strong>, όχι στο generic
+                homepage.
+              </p>
+              <div className="space-y-2 mb-4">
+                {[
+                  [
+                    "Google Ads",
+                    '"κράνος touring"',
+                    "Σελίδα μόνο touring κράνη + CTA",
+                  ],
+                  [
+                    "Facebook Ad",
+                    '"Nordcode -20%"',
+                    "Nordcode products + countdown",
+                  ],
+                  [
+                    "Instagram",
+                    '"Rider Quiz"',
+                    "Quiz → τύπος rider → προτάσεις",
+                  ],
+                ].map(([platform, query, result]) => (
+                  <div
+                    key={platform}
+                    className="flex items-start gap-2 text-sm"
+                  >
+                    <span className="text-[#DC2626] font-bold shrink-0">
+                      {platform}
+                    </span>
+                    <span className="text-gray-400">{query} →</span>
+                    <span className="text-gray-600">{result}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-500">
+                <p className="text-sm text-green-700 font-semibold">
+                  Conversion x2-3 vs generic homepage (5-15% αντί 2-4%)
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-red-50 to-white rounded-2xl border border-red-200 p-6"
+            >
+              <div className="text-2xl mb-3">🏍️</div>
+              <h3 className="text-lg font-bold mb-3">Bike-Specific Pages</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                Αυτόματα δημιουργημένες σελίδες για κάθε μοντέλο μηχανής.
+                Τεράστιο SEO long-tail δυναμικό.
+              </p>
+              <div className="space-y-2 mb-4">
+                {[
+                  ["/bikes/bmw-r1250gs", "Τα πάντα για τη GS σου"],
+                  ["/bikes/yamaha-tenere-700", "Ξεκίνα το adventure"],
+                  ["/bikes/honda-africa-twin", "Africa Twin essentials"],
+                ].map(([url, desc]) => (
+                  <div key={url} className="flex items-center gap-2 text-sm">
+                    <code className="bg-gray-100 px-2 py-0.5 rounded text-xs text-[#DC2626] font-mono">
+                      {url}
+                    </code>
+                    <span className="text-gray-500">→ {desc}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-500">
+                <p className="text-sm text-green-700 font-semibold">
+                  &quot;αξεσουάρ bmw gs&quot; στη Google → πέφτει εδώ → δωρεάν
+                  traffic
+                </p>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* More landing page types */}
+          <div className="grid md:grid-cols-2 gap-5 mb-5">
+            {[
+              {
+                icon: "🏄",
+                title: "Rider-Type Pages",
+                desc: "Κάθε τύπος αναβάτη βλέπει τον δικό του κόσμο:",
+                items: [
+                  "/touring — Βαλίτσες, GPS, κράνη comfort",
+                  "/adventure — Off-road boots, protection, rally gear",
+                  "/city — Urban κράνη, γάντια, αντανακλαστικά",
+                  "/sport — Racing suits, sliders, track day gear",
+                ],
+                benefit:
+                  "Κάθε rider νιώθει ότι το site είναι φτιαγμένο για ΑΥΤΟΝ",
+              },
+              {
+                icon: "📅",
+                title: "Seasonal & Event Pages",
+                desc: "Αυτόματη ενεργοποίηση βάσει ημερομηνίας:",
+                items: [
+                  "Μάρτιος: 'Ετοιμάσου για τη σεζόν' — bundles, checklist",
+                  "Νοέμβριος: Black Friday — countdown, flash deals",
+                  "Μετά event: Greek Adv 2026 — highlights, promo",
+                  "Χειμώνας: Heated gear, αδιάβροχα, thermal",
+                ],
+                benefit: "Set & forget — ενεργοποιούνται μόνες τους",
+              },
+              {
+                icon: "📧",
+                title: "Lead Magnets — Χτίζουν email list",
+                desc: "Μαζεύετε emails χωρίς να ζητήσετε 'εγγραφή':",
+                items: [
+                  "Free PDF: 'Πώς να διαλέξεις κράνος' → Email",
+                  "AI Size Quiz → Email + μετρήσεις σώματος",
+                  "'Τι τύπος rider είσαι;' → Email + preferences",
+                  "Κλήρωση Shoei → Email + social shares",
+                ],
+                benefit:
+                  "Κάθε visitor γίνεται lead — ακόμα κι αν δεν αγοράσει τώρα",
+              },
+              {
+                icon: "🔗",
+                title: "Referral & Brand Pages",
+                desc: "Viral growth + brand partnerships:",
+                items: [
+                  "/invite/KOSTAS2026 → 'Ο Κώστας σου δίνει 10%'",
+                  "/brands/nordcode → Brand story + exclusive deals",
+                  "/brands/pilot → QR destination από ετικέτες προϊόντων",
+                ],
+                benefit: "Κάθε πελάτης γίνεται ambassador — viral loop",
+              },
+            ].map((card) => (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow"
+              >
+                <div className="text-2xl mb-3">{card.icon}</div>
+                <h3 className="text-lg font-bold mb-2">{card.title}</h3>
+                <p className="text-sm text-gray-500 mb-3">{card.desc}</p>
+                <div className="space-y-1.5 mb-4">
+                  {card.items.map((item) => (
+                    <div
+                      key={item}
+                      className="flex items-start gap-2 text-sm text-gray-600"
+                    >
+                      <span className="text-[#DC2626] mt-0.5">›</span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-500">
+                  <p className="text-sm text-green-700 font-semibold">
+                    {card.benefit}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Landing Page Builder */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-br from-green-50 to-white rounded-2xl border border-green-200 p-6 mb-8"
+          >
+            <div className="text-2xl mb-3">🔧</div>
+            <h3 className="text-lg font-bold mb-3">
+              Landing Page Builder — Χωρίς κώδικα
+            </h3>
+            <p className="text-sm text-gray-600 mb-4">
+              Εσείς ή ο marketing manager φτιάχνετε νέα landing page σε λεπτά
+              μέσω admin panel:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-2 mb-4">
+              {[
+                "Επιλογή template (campaign, quiz, seasonal)",
+                "Drag-and-drop blocks (hero, products, countdown, CTA)",
+                "A/B testing — δοκιμάστε 2 versions",
+                "UTM tracking — ποια διαφήμιση φέρνει πωλήσεις",
+                "Schedule publish/unpublish αυτόματα",
+                "Auto OG images για social sharing",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-2 text-sm text-gray-600"
+                >
+                  <span className="text-green-500">✓</span>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+            <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-500">
+              <p className="text-sm text-green-700 font-semibold">
+                Δεν χρειάζεστε developer — μόνοι σας, σε λεπτά
+              </p>
+            </div>
+          </motion.div>
+
+          {/* ROI */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-r from-[#065F46] to-[#059669] rounded-2xl p-10 text-center text-white"
+          >
+            <p className="text-5xl font-black mb-2">x2-3</p>
+            <p className="text-sm opacity-80">
+              Conversion rate με targeted landing pages vs generic homepage
+              (industry benchmark: 5-15% αντί 2-4%)
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ====== SEO ====== */}
       <section className="bg-[#0F1419] py-24 px-6">
         <div className="max-w-6xl mx-auto">
@@ -704,7 +951,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="text-[#DC2626] text-sm font-bold tracking-[0.2em] uppercase mb-3">
-              06 — SEO & Performance
+              07 — SEO & Performance
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">
               Να σας βρίσκουν χωρίς διαφήμιση
@@ -770,7 +1017,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="text-[#DC2626] text-sm font-bold tracking-[0.2em] uppercase mb-3">
-              07 — Κοστολόγηση
+              08 — Κοστολόγηση
             </p>
             <h2 className="text-4xl md:text-5xl font-black mb-16">
               Ανάλυση Κόστους
@@ -843,10 +1090,10 @@ export default function Home() {
                 Αγορά
               </span>
               <p className="text-5xl font-black text-gray-300 line-through decoration-[#DC2626] mt-4 mb-2">
-                €34.000+
+                €36.000+
               </p>
               <p className="text-sm text-gray-400">
-                Τι θα πληρώνατε αλλού (680-885 ώρες × €50-60/ώρα)
+                Τι θα πληρώνατε αλλού (720-935 ώρες × €50-60/ώρα)
               </p>
             </motion.div>
 
@@ -870,6 +1117,7 @@ export default function Home() {
                   "Full ERP integration",
                   "6 γλώσσες & multi-currency",
                   "20+ αυτοματισμοί",
+                  "Landing page builder & templates",
                   "SEO, Analytics, Merchant Feed",
                   "30 ημέρες post-launch support",
                 ].map((item) => (
@@ -890,7 +1138,7 @@ export default function Home() {
             className="bg-green-50 border-2 border-green-500 rounded-2xl p-6 text-center mb-12"
           >
             <p className="text-3xl font-black text-[#059669]">
-              Εξοικονόμηση: €19.000–38.000+
+              Εξοικονόμηση: €21.000–41.000+
             </p>
             <p className="text-sm text-green-600">
               σε σχέση με τιμές αγοράς για αντίστοιχο scope
@@ -945,7 +1193,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="text-[#DC2626] text-sm font-bold tracking-[0.2em] uppercase mb-3">
-              08 — Χρονοδιάγραμμα
+              09 — Χρονοδιάγραμμα
             </p>
             <h2 className="text-4xl md:text-5xl font-black mb-16">
               Πλάνο Υλοποίησης
