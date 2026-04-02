@@ -254,38 +254,38 @@ export function SEOPerformance() {
   );
 }
 
-// ─── Section: PWA — AI SEO Product Upload ────────────────────────────────────
+// ─── Section: PWA — Progressive Web App for MotoMarket ───────────────────────
 
 const pwaFeatures = [
   {
     icon: "📲",
     title: "Εγκατάσταση σαν Native App",
-    desc: "Ένα tap στο κινητό ή desktop και η εφαρμογή εγκαθίσταται — χωρίς App Store, χωρίς downloads, χωρίς updates. Ανοίγει αμέσως σαν κανονική εφαρμογή.",
+    desc: "Ο πελάτης πατάει «Προσθήκη στην αρχική οθόνη» και το MotoMarket ανοίγει σαν κανονική εφαρμογή — χωρίς App Store, χωρίς downloads.",
   },
   {
-    icon: "🤖",
-    title: "AI-Powered SEO Content",
-    desc: "Περνάτε ένα προϊόν και το AI δημιουργεί αυτόματα: SEO τίτλο, meta description, περιγραφή προϊόντος, alt text εικόνων — όλα βάσει των προδιαγραφών που εσείς ορίζετε.",
+    icon: "📴",
+    title: "Offline Mode",
+    desc: "Ακόμα και χωρίς internet ο πελάτης βλέπει τα προϊόντα, το καλάθι του, τα αγαπημένα. Μόλις βρει δίκτυο, συγχρονίζεται αυτόματα.",
   },
   {
-    icon: "📋",
-    title: "Custom SEO Προδιαγραφές",
-    desc: "Ορίζετε τους κανόνες μία φορά: μήκος τίτλου, tone of voice, keywords, δομή περιγραφής. Το AI ακολουθεί πιστά τις οδηγίες σας σε κάθε προϊόν.",
-  },
-  {
-    icon: "🌐",
-    title: "Πολυγλωσσικό",
-    desc: "Δημιουργεί content σε όλες τις γλώσσες του e-shop (GR, EN, DE κλπ.) με SEO-optimized μεταφράσεις — όχι απλά Google Translate.",
+    icon: "🔔",
+    title: "Push Notifications",
+    desc: "Ειδοποιήσεις για προσφορές, price drops, order updates — απευθείας στο κινητό, χωρίς email. Σαν native app.",
   },
   {
     icon: "⚡",
-    title: "Offline & Instant",
-    desc: "Σαν PWA δουλεύει ακόμα και χωρίς internet. Ξεκινάτε offline, και συγχρονίζεται αυτόματα μόλις βρείτε δίκτυο.",
+    title: "Instant Loading",
+    desc: "Service workers + caching = η σελίδα φορτώνει σε milliseconds μετά την πρώτη επίσκεψη. Ταχύτερο από οποιοδήποτε native app.",
   },
   {
-    icon: "📊",
-    title: "Bulk Upload",
-    desc: "Ανεβάστε δεκάδες προϊόντα μαζί μέσω CSV/Excel. Το AI δημιουργεί SEO content για όλα ταυτόχρονα — ώρες δουλειάς σε λεπτά.",
+    icon: "🔄",
+    title: "Auto Updates",
+    desc: "Κάθε φορά που ανοίγει η εφαρμογή, ενημερώνεται αυτόματα. Χωρίς «Ενημέρωση app», χωρίς εγκρίσεις Apple/Google.",
+  },
+  {
+    icon: "💾",
+    title: "Χωρίς Κόστος App Store",
+    desc: "Δεν χρειάζεται ξεχωριστό iOS/Android app. Ένα codebase, όλες οι πλατφόρμες. Εξοικονόμηση χιλιάδων ευρώ σε development & maintenance.",
   },
 ];
 
@@ -294,31 +294,23 @@ export function PWAFeatureSection() {
     <section className="bg-moto-dark py-24 px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-3">
-            <p className="text-amber-400 text-sm font-mono tracking-widest uppercase">
-              07 — ΔΩΡΟ ΣΤΟ ΠΑΚΕΤΟ
-            </p>
-            <span className="bg-amber-400/20 text-amber-400 text-[10px] font-black px-2.5 py-1 rounded-full tracking-wider uppercase">
-              ΑΞΙΑΣ €5.000+
-            </span>
-          </div>
+          <p className="text-moto-red text-sm font-mono tracking-widest uppercase mb-3">
+            07 — PROGRESSIVE WEB APP
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            AI SEO Product Upload <span className="text-amber-400">PWA</span>
+            Το MotoMarket σαν <span className="text-moto-red">Native App</span>
           </h2>
           <p className="text-white/50 text-lg max-w-3xl leading-relaxed mb-16">
-            Μια ξεχωριστή Progressive Web App που εγκαθίσταται σαν native
-            εφαρμογή στο κινητό ή τον υπολογιστή σας. Περνάτε τα προϊόντα σας
-            και το AI φτιάχνει perfect SEO content αυτόματα — χωρίς copywriter,
-            χωρίς trial & error.{" "}
-            <span className="text-amber-400 font-semibold">
-              Περιλαμβάνεται δωρεάν στην τιμή των €16.000.
-            </span>
+            Το e-shop θα είναι Progressive Web App — εγκαθίσταται στο κινητό ή
+            τον υπολογιστή σαν κανονική εφαρμογή, δουλεύει offline, στέλνει push
+            notifications. Χωρίς App Store, χωρίς ξεχωριστό κόστος, χωρίς
+            συντήρηση δεύτερου codebase.
           </p>
         </FadeIn>
 
         {/* What is a PWA explainer */}
         <FadeIn delay={0.05}>
-          <div className="bg-gradient-to-br from-amber-400/10 via-amber-400/5 to-transparent border border-amber-400/20 rounded-2xl p-6 md:p-8 mb-10">
+          <div className="bg-gradient-to-br from-moto-red/10 via-moto-red/5 to-transparent border border-moto-red/20 rounded-2xl p-6 md:p-8 mb-10">
             <div className="flex items-start gap-4 mb-6">
               <span className="text-3xl">💡</span>
               <div>
@@ -330,12 +322,12 @@ export function PWAFeatureSection() {
                   <span className="text-white font-semibold">
                     Progressive Web App
                   </span>{" "}
-                  είναι μια web εφαρμογή που συμπεριφέρεται ακριβώς σαν native
-                  app. Εγκαθίσταται στην αρχική οθόνη, ανοίγει full-screen,
-                  δουλεύει offline, στέλνει push notifications — χωρίς App
-                  Store, χωρίς εγκρίσεις Apple/Google, χωρίς ξεχωριστό κόστος
-                  συντήρησης. Είναι ό,τι καλύτερο και από τους δύο κόσμους: η
-                  ευκολία ενός website + η εμπειρία ενός native app.
+                  είναι ένα website που συμπεριφέρεται ακριβώς σαν native app.
+                  Εγκαθίσταται στην αρχική οθόνη, ανοίγει full-screen, δουλεύει
+                  offline, στέλνει push notifications — χωρίς App Store, χωρίς
+                  εγκρίσεις Apple/Google, χωρίς ξεχωριστό κόστος συντήρησης.
+                  Αντί να πληρώσετε €15.000-30.000 για ξεχωριστό mobile app, το
+                  παίρνετε ενσωματωμένο στο e-shop.
                 </p>
               </div>
             </div>
@@ -369,6 +361,90 @@ export function PWAFeatureSection() {
         <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {pwaFeatures.map(({ icon, title, desc }) => (
             <StaggerItem key={title}>
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-6 h-full hover:border-moto-red/30 transition-colors">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-moto-red/15 flex items-center justify-center text-xl">
+                    {icon}
+                  </div>
+                  <h3 className="text-white font-semibold text-base">
+                    {title}
+                  </h3>
+                </div>
+                <p className="text-white/55 text-sm leading-relaxed">{desc}</p>
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerChildren>
+
+        {/* Bottom callout */}
+        <FadeIn delay={0.15}>
+          <div className="bg-moto-red/10 border border-moto-red/30 rounded-xl p-5 text-center">
+            <p className="text-white font-bold text-base">
+              Ένα e-shop + ένα mobile app σε ένα — χωρίς ξεχωριστό κόστος
+              development ή συντήρησης
+            </p>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  );
+}
+
+// ─── Section: AI SEO Web App (Gift) ──────────────────────────────────────────
+
+const seoAppFeatures = [
+  {
+    icon: "🤖",
+    title: "AI-Powered SEO Content",
+    desc: "Περνάτε ένα προϊόν και το AI δημιουργεί αυτόματα: SEO τίτλο, meta description, περιγραφή προϊόντος, alt text εικόνων.",
+  },
+  {
+    icon: "📋",
+    title: "Custom SEO Προδιαγραφές",
+    desc: "Ορίζετε τους κανόνες μία φορά: μήκος τίτλου, tone of voice, keywords, δομή περιγραφής. Το AI ακολουθεί πιστά τις οδηγίες σας.",
+  },
+  {
+    icon: "🌐",
+    title: "Πολυγλωσσικό",
+    desc: "Δημιουργεί content σε όλες τις γλώσσες του e-shop με SEO-optimized μεταφράσεις — όχι απλά Google Translate.",
+  },
+  {
+    icon: "📊",
+    title: "Bulk Upload",
+    desc: "Ανεβάστε δεκάδες προϊόντα μαζί μέσω CSV/Excel. Το AI δημιουργεί SEO content για όλα ταυτόχρονα — ώρες δουλειάς σε λεπτά.",
+  },
+];
+
+export function AIProductAppSection() {
+  return (
+    <section className="bg-[#080c10] py-24 px-6 border-t border-white/5">
+      <div className="max-w-6xl mx-auto">
+        <FadeIn>
+          <div className="flex items-center gap-3 mb-3">
+            <p className="text-amber-400 text-sm font-mono tracking-widest uppercase">
+              ΔΩΡΟ
+            </p>
+            <span className="bg-amber-400/20 text-amber-400 text-[10px] font-black px-2.5 py-1 rounded-full tracking-wider uppercase">
+              ΠΕΡΙΛΑΜΒΑΝΕΤΑΙ ΔΩΡΕΑΝ
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            AI SEO Product Upload{" "}
+            <span className="text-amber-400">Web App</span>
+          </h2>
+          <p className="text-white/50 text-lg max-w-3xl leading-relaxed mb-16">
+            Ξεχωριστή web εφαρμογή, ανεξάρτητη από το e-shop, για την
+            επιχείρηση. Περνάτε τα προϊόντα σας και το AI φτιάχνει perfect SEO
+            content αυτόματα — τίτλους, περιγραφές, meta tags, alt text, σύμφωνα
+            με τις προδιαγραφές που εσείς ορίζετε. Χωρίς copywriter, χωρίς trial
+            & error.
+          </p>
+        </FadeIn>
+
+        {/* Feature cards */}
+        <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+          {seoAppFeatures.map(({ icon, title, desc }) => (
+            <StaggerItem key={title}>
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6 h-full hover:border-amber-400/30 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-xl bg-amber-400/15 flex items-center justify-center text-xl">
@@ -384,49 +460,45 @@ export function PWAFeatureSection() {
           ))}
         </StaggerChildren>
 
-        {/* Value comparison */}
-        <FadeIn delay={0.15}>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+        {/* How it works */}
+        <FadeIn delay={0.1}>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mb-10">
             <h3 className="text-white font-bold text-lg mb-6 text-center">
-              Γιατί αξίζει €5.000+ σαν standalone εφαρμογή
+              Πώς δουλεύει
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               {[
-                {
-                  stat: "10.000+",
-                  label: "Προϊόντα",
-                  desc: "SEO content αυτόματα — θα χρειαζόταν 6+ μήνες δουλειά copywriter",
-                },
-                {
-                  stat: "€0",
-                  label: "Κόστος Copywriter",
-                  desc: "Αντί για €0.50-2/προϊόν = €5.000-20.000 σε copywriting",
-                },
-                {
-                  stat: "5 λεπτά",
-                  label: "Αντί 30 λεπτά / προϊόν",
-                  desc: "Τίτλος + περιγραφή + meta + alt text σε δευτερόλεπτα",
-                },
-              ].map(({ stat, label, desc }) => (
-                <div
-                  key={label}
-                  className="bg-amber-400/5 border border-amber-400/15 rounded-xl p-5 text-center"
-                >
-                  <p className="text-amber-400 font-black text-3xl mb-1">
-                    {stat}
-                  </p>
-                  <p className="text-white font-semibold text-sm mb-2">
-                    {label}
-                  </p>
-                  <p className="text-white/40 text-xs">{desc}</p>
+                { step: "1", label: "Ορίζετε SEO κανόνες", icon: "📋" },
+                { step: "2", label: "Περνάτε τα προϊόντα", icon: "📦" },
+                { step: "3", label: "AI δημιουργεί content", icon: "🤖" },
+                { step: "4", label: "Perfect SEO σε κάθε προϊόν", icon: "🚀" },
+              ].map(({ step, label, icon }, i) => (
+                <div key={step} className="flex items-center gap-4">
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-12 h-12 rounded-full bg-amber-400/15 border border-amber-400/30 flex items-center justify-center text-xl">
+                      {icon}
+                    </div>
+                    <p className="text-white/70 text-xs text-center font-medium">
+                      {label}
+                    </p>
+                  </div>
+                  {i < 3 && (
+                    <span className="text-white/20 text-xl hidden sm:block">
+                      →
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
-            <div className="bg-amber-400/10 border border-amber-400/30 rounded-xl p-4 text-center">
-              <p className="text-amber-400 font-bold text-base">
-                Περιλαμβάνεται ΔΩΡΕΑΝ στην προσφορά — μέσα στα €16.000
-              </p>
-            </div>
+          </div>
+        </FadeIn>
+
+        {/* Bottom callout */}
+        <FadeIn delay={0.15}>
+          <div className="bg-amber-400/10 border border-amber-400/30 rounded-xl p-5 text-center">
+            <p className="text-amber-400 font-bold text-base">
+              Περιλαμβάνεται δωρεάν μέσα στην προσφορά
+            </p>
           </div>
         </FadeIn>
       </div>
@@ -499,7 +571,8 @@ const includedItems = [
   "SEO & Analytics setup",
   "CI/CD & Deployment",
   "3 μήνες support",
-  "ΔΩΡΟ: AI SEO Product Upload PWA",
+  "Progressive Web App (PWA)",
+  "ΔΩΡΟ: AI SEO Product Upload Web App",
 ];
 
 const roiStats = [
@@ -656,28 +729,6 @@ export function CostAnalysis() {
           </StaggerItem>
         </StaggerChildren>
 
-        {/* Gift Banner — AI SEO PWA */}
-        <FadeIn delay={0.05}>
-          <div className="bg-gradient-to-r from-amber-500/10 via-amber-400/5 to-amber-500/10 border border-amber-500/30 rounded-2xl p-6 mb-6">
-            <div className="flex items-start gap-4">
-              <span className="text-3xl">🎁</span>
-              <div>
-                <p className="text-amber-400 font-bold text-lg mb-1">
-                  ΔΩΡΟ: AI SEO Product Upload — Progressive Web App (PWA)
-                </p>
-                <p className="text-white/60 text-sm leading-relaxed">
-                  Ξεχωριστή PWA εφαρμογή που εγκαθίσταται σαν native app στο
-                  κινητό ή τον υπολογιστή σας. Περνάτε τα προϊόντα σας και το AI
-                  δημιουργεί αυτόματα τίτλους, περιγραφές, meta tags και alt
-                  text σύμφωνα με τις SEO προδιαγραφές που θα ορίσετε — για
-                  perfect SEO σε κάθε προϊόν, χωρίς να χρειάζεστε copywriter.
-                  Αξία: €5.000+
-                </p>
-              </div>
-            </div>
-          </div>
-        </FadeIn>
-
         {/* Savings Banner */}
         <FadeIn delay={0.1}>
           <div className="bg-moto-green/10 border border-moto-green/30 rounded-2xl p-5 text-center mb-12">
@@ -685,7 +736,7 @@ export function CostAnalysis() {
               Εξοικονόμηση: €24.000+ (60% έκπτωση)
             </p>
             <p className="text-white/40 text-sm mt-1">
-              + δώρο AI SEO PWA αξίας €5.000
+              + PWA e-shop + δώρο AI SEO Web App
             </p>
           </div>
         </FadeIn>
