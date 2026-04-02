@@ -1008,6 +1008,189 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ====== PWA — AI SEO PRODUCT UPLOAD ====== */}
+      <section className="bg-[#0F1419] py-24 px-6 border-t border-white/5">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-3 mb-3">
+              <p className="text-amber-500 text-sm font-bold tracking-[0.2em] uppercase">
+                07 — ΔΩΡΟ ΣΤΟ ΠΑΚΕΤΟ
+              </p>
+              <span className="bg-amber-500/20 text-amber-500 text-[10px] font-black px-2.5 py-1 rounded-full tracking-wider uppercase">
+                ΑΞΙΑΣ €5.000+
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black mb-4">
+              AI SEO Product Upload <span className="text-amber-500">PWA</span>
+            </h2>
+            <p className="text-gray-400 text-lg max-w-3xl leading-relaxed mb-16">
+              Μια ξεχωριστή Progressive Web App που εγκαθίσταται σαν native
+              εφαρμογή στο κινητό ή τον υπολογιστή σας. Περνάτε τα προϊόντα σας
+              και το AI φτιάχνει perfect SEO content αυτόματα — χωρίς
+              copywriter, χωρίς trial &amp; error.{" "}
+              <span className="text-amber-500 font-semibold">
+                Περιλαμβάνεται δωρεάν στην τιμή των €16.000.
+              </span>
+            </p>
+          </motion.div>
+
+          {/* What is a PWA explainer */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-amber-50 border-2 border-amber-300 rounded-2xl p-6 md:p-8 mb-10"
+          >
+            <div className="flex items-start gap-4 mb-6">
+              <span className="text-3xl">💡</span>
+              <div>
+                <h3 className="text-[#0F1419] font-black text-xl mb-2">
+                  Τι είναι ένα PWA;
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Ένα{" "}
+                  <span className="text-[#0F1419] font-semibold">
+                    Progressive Web App
+                  </span>{" "}
+                  είναι μια web εφαρμογή που συμπεριφέρεται ακριβώς σαν native
+                  app. Εγκαθίσταται στην αρχική οθόνη, ανοίγει full-screen,
+                  δουλεύει offline, στέλνει push notifications — χωρίς App
+                  Store, χωρίς εγκρίσεις Apple/Google, χωρίς ξεχωριστό κόστος
+                  συντήρησης. Είναι ό,τι καλύτερο και από τους δύο κόσμους: η
+                  ευκολία ενός website + η εμπειρία ενός native app.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {[
+                ["🚫", "Χωρίς App Store", "Άμεση πρόσβαση"],
+                ["📴", "Offline Mode", "Δουλεύει παντού"],
+                ["🔔", "Push Notifications", "Σαν native app"],
+                ["🔄", "Auto Updates", "Πάντα up-to-date"],
+              ].map(([icon, label, sub]) => (
+                <div
+                  key={label}
+                  className="bg-white border border-amber-200 rounded-xl p-3 text-center"
+                >
+                  <span className="text-2xl">{icon}</span>
+                  <p className="text-[#0F1419] font-semibold text-xs mt-2">
+                    {label}
+                  </p>
+                  <p className="text-gray-400 text-[10px]">{sub}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Feature cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+            {[
+              {
+                icon: "📲",
+                title: "Εγκατάσταση σαν Native App",
+                desc: "Ένα tap στο κινητό ή desktop και η εφαρμογή εγκαθίσταται — χωρίς App Store, χωρίς downloads, χωρίς updates.",
+              },
+              {
+                icon: "🤖",
+                title: "AI-Powered SEO Content",
+                desc: "Περνάτε ένα προϊόν και το AI δημιουργεί αυτόματα: SEO τίτλο, meta description, περιγραφή, alt text εικόνων.",
+              },
+              {
+                icon: "📋",
+                title: "Custom SEO Προδιαγραφές",
+                desc: "Ορίζετε τους κανόνες μία φορά: μήκος τίτλου, tone of voice, keywords, δομή. Το AI ακολουθεί πιστά τις οδηγίες.",
+              },
+              {
+                icon: "🌐",
+                title: "Πολυγλωσσικό",
+                desc: "Content σε όλες τις γλώσσες του e-shop με SEO-optimized μεταφράσεις — όχι απλά Google Translate.",
+              },
+              {
+                icon: "⚡",
+                title: "Offline & Instant",
+                desc: "Σαν PWA δουλεύει ακόμα χωρίς internet. Ξεκινάτε offline, συγχρονίζεται αυτόματα μόλις βρείτε δίκτυο.",
+              },
+              {
+                icon: "📊",
+                title: "Bulk Upload",
+                desc: "Ανεβάστε δεκάδες προϊόντα μαζί μέσω CSV/Excel. Το AI δημιουργεί SEO content για όλα ταυτόχρονα.",
+              },
+            ].map(({ icon, title, desc }) => (
+              <motion.div
+                key={title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-2xl p-6 hover:border-amber-300 transition-colors"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
+                    {icon}
+                  </div>
+                  <h3 className="text-[#0F1419] font-bold text-base">
+                    {title}
+                  </h3>
+                </div>
+                <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Value comparison */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-white border-2 border-gray-200 rounded-2xl p-6 md:p-8"
+          >
+            <h3 className="text-[#0F1419] font-black text-lg mb-6 text-center">
+              Γιατί αξίζει €5.000+ σαν standalone εφαρμογή
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {[
+                [
+                  "10.000+",
+                  "Προϊόντα",
+                  "SEO content αυτόματα — θα χρειαζόταν 6+ μήνες δουλειά copywriter",
+                ],
+                [
+                  "€0",
+                  "Κόστος Copywriter",
+                  "Αντί για €0.50-2/προϊόν = €5.000-20.000 σε copywriting",
+                ],
+                [
+                  "5 λεπτά",
+                  "Αντί 30 λεπτά / προϊόν",
+                  "Τίτλος + περιγραφή + meta + alt text σε δευτερόλεπτα",
+                ],
+              ].map(([stat, label, desc]) => (
+                <div
+                  key={label}
+                  className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center"
+                >
+                  <p className="text-amber-600 font-black text-3xl mb-1">
+                    {stat}
+                  </p>
+                  <p className="text-[#0F1419] font-semibold text-sm mb-2">
+                    {label}
+                  </p>
+                  <p className="text-gray-400 text-xs">{desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="bg-amber-100 border border-amber-300 rounded-xl p-4 text-center">
+              <p className="text-amber-700 font-bold text-base">
+                Περιλαμβάνεται ΔΩΡΕΑΝ στην προσφορά — μέσα στα €16.000
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ====== COST ====== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-6xl mx-auto">
@@ -1062,7 +1245,7 @@ export default function Home() {
                 <span className="font-bold text-[#059669]">
                   ✓ Η Πρόταση Μας
                 </span>
-                <span className="font-black text-[#059669]">€15.000</span>
+                <span className="font-black text-[#059669]">€16.000</span>
               </div>
               <div className="h-7 bg-gray-100 rounded-lg overflow-hidden">
                 <motion.div
@@ -1087,13 +1270,13 @@ export default function Home() {
               className="rounded-2xl border-2 border-gray-200 p-8"
             >
               <span className="text-xs font-bold text-gray-400 tracking-widest uppercase">
-                Αγορά
+                Κανονική Τιμή
               </span>
               <p className="text-5xl font-black text-gray-300 line-through decoration-[#DC2626] mt-4 mb-2">
-                €36.000+
+                €40.000
               </p>
               <p className="text-sm text-gray-400">
-                Τι θα πληρώνατε αλλού (720-935 ώρες × €50-60/ώρα)
+                Τι θα πληρώνατε αλλού για ισοδύναμο project
               </p>
             </motion.div>
 
@@ -1103,12 +1286,13 @@ export default function Home() {
               viewport={{ once: true }}
               className="rounded-2xl border-2 border-[#DC2626] bg-[#0F1419] p-8 text-white relative overflow-hidden"
             >
-              <span className="absolute top-4 right-4 text-xs font-bold bg-[#DC2626] text-white px-3 py-1 rounded-full tracking-widest uppercase">
-                Πρόταση
+              <span className="absolute top-4 right-4 text-xs font-black bg-[#DC2626] text-white px-3 py-1.5 rounded-full tracking-widest uppercase animate-pulse">
+                -60% ΕΚΠΤΩΣΗ
               </span>
-              <p className="text-5xl font-black text-[#DC2626] mt-4 mb-4">
-                €15.000
+              <p className="text-sm text-gray-400 mt-4 mb-1">
+                Αρχική τιμή: <span className="line-through">€40.000</span>
               </p>
+              <p className="text-5xl font-black text-[#DC2626] mb-4">€16.000</p>
               <div className="space-y-2">
                 {[
                   "Custom design & development",
@@ -1120,15 +1304,59 @@ export default function Home() {
                   "Landing page builder & templates",
                   "SEO, Analytics, Merchant Feed",
                   "30 ημέρες post-launch support",
+                  "ΔΩΡΟ: AI SEO Product Upload PWA",
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-sm">
-                    <span className="text-green-400">✓</span>
-                    <span className="text-white/70">{item}</span>
+                  <div
+                    key={item}
+                    className={`flex items-center gap-2 text-sm ${item.startsWith("ΔΩΡΟ") ? "text-amber-400 font-semibold" : ""}`}
+                  >
+                    <span
+                      className={
+                        item.startsWith("ΔΩΡΟ")
+                          ? "text-amber-400"
+                          : "text-green-400"
+                      }
+                    >
+                      {item.startsWith("ΔΩΡΟ") ? "🎁" : "✓"}
+                    </span>
+                    <span
+                      className={
+                        item.startsWith("ΔΩΡΟ")
+                          ? "text-amber-400"
+                          : "text-white/70"
+                      }
+                    >
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
             </motion.div>
           </div>
+
+          {/* Gift Banner — AI SEO App */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-r from-amber-50 via-amber-50/50 to-amber-50 border-2 border-amber-400 rounded-2xl p-6 mb-6"
+          >
+            <div className="flex items-start gap-4">
+              <span className="text-3xl">🎁</span>
+              <div>
+                <p className="text-amber-600 font-black text-lg mb-1">
+                  ΔΩΡΟ: AI SEO Product Upload PWA
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Progressive Web App που εγκαθίσταται σαν native app στο κινητό
+                  ή τον υπολογιστή σας. Περνάτε τα προϊόντα σας και το AI
+                  δημιουργεί αυτόματα τίτλους, περιγραφές, meta tags και alt
+                  text σύμφωνα με τις SEO προδιαγραφές που θα ορίσετε — για
+                  perfect SEO σε κάθε προϊόν, χωρίς copywriter. Αξία: €5.000+
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Savings */}
           <motion.div
@@ -1138,10 +1366,10 @@ export default function Home() {
             className="bg-green-50 border-2 border-green-500 rounded-2xl p-6 text-center mb-12"
           >
             <p className="text-3xl font-black text-[#059669]">
-              Εξοικονόμηση: €21.000–41.000+
+              Εξοικονόμηση: €24.000+ (60% έκπτωση)
             </p>
             <p className="text-sm text-green-600">
-              σε σχέση με τιμές αγοράς για αντίστοιχο scope
+              + δώρο AI SEO PWA αξίας €5.000
             </p>
           </motion.div>
 
@@ -1284,10 +1512,10 @@ export default function Home() {
           {/* Payment terms */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
             {[
-              ["30%", "€4.500", "Προκαταβολή"],
-              ["30%", "€4.500", "Phase 2"],
-              ["20%", "€3.000", "Phase 3"],
-              ["20%", "€3.000", "Go-Live"],
+              ["30%", "€4.800", "Προκαταβολή"],
+              ["30%", "€4.800", "Phase 2"],
+              ["20%", "€3.200", "Phase 3"],
+              ["20%", "€3.200", "Go-Live"],
             ].map(([pct, amount, label]) => (
               <motion.div
                 key={label}
